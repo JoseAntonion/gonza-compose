@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String) {
     var name by remember { mutableStateOf("") }
-    var maxLength = 10
+    val maxLength = 10
 
     Box(
         modifier = Modifier
