@@ -67,7 +67,7 @@ fun Greeting() {
                 name = if (it.length <= maxLength) it else it.take(maxLength)
             },
             label = {
-                Text(text = "Nombre")
+                Text(text = "Nombre del sujeto")
             },
             placeholder = { Text(text = "Escribe tu nombre") },
             maxLines = 1,
