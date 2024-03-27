@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting() {
     var name by remember { mutableStateOf("") }
-    var maxLength = 10
+    val maxLength = 10
 
     Box(
         modifier = Modifier
@@ -67,9 +67,9 @@ fun Greeting() {
                 name = if (it.length <= maxLength) it else it.take(maxLength)
             },
             label = {
-                Text(text = "Nombre")
+                Text(text = "Nombre del sujeto con el IDE")
             },
-            placeholder = { Text(text = "Escribe tu nombre") },
+            placeholder = { Text(text = "Escribe tu nombre con las manos") },
             maxLines = 1,
             textStyle = Typography.body1,
             keyboardOptions = KeyboardOptions(
