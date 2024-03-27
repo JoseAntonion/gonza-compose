@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    Greeting()
                 }
             }
         }
@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun Greeting() {
     var name by remember { mutableStateOf("") }
     var maxLength = 10
 
@@ -102,5 +102,5 @@ fun Greeting(name: String) {
 )
 @Composable
 fun DefaultPreview() {
-    Greeting(name = "Preview")
+    Greeting()
 }
