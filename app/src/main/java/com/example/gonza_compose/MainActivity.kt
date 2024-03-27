@@ -69,7 +69,7 @@ fun Greeting() {
             label = {
                 Text(text = "Nombre del sujeto con el IDE")
             },
-            placeholder = { Text(text = "Escribe tu nombre") },
+            placeholder = { Text(text = "Escribe tu nombre con las manos") },
             maxLines = 1,
             textStyle = Typography.body1,
             keyboardOptions = KeyboardOptions(
